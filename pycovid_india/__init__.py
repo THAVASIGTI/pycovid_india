@@ -2,7 +2,7 @@
 
 import requests,os,logging,json
 from datetime import datetime, timedelta
-from util import *
+from .util import *
 
 class CovidInfo:
     def __init__(self):
