@@ -10,7 +10,7 @@ class CovidInfo:
         self.time_stamp_path = os.path.join(self.location,TIME_STAMP_FILE_NAME)
         self.config_file_path = os.path.join(self.location,CONFIG_FILE_NAME)
         self.state_code_file_path = os.path.join(self.location,STATE_CODE_NAME)
-        self.state_id = self.read_json(self.state_code_file_path)
+        self.get_state_id = self.read_json(self.state_code_file_path)
         self.config_buff = self.read_json(self.config_file_path)
         self.state_id_count = len(self.state_id)
         self.ignore_ids = [AS_ON,UPDATED_ON,STATE_NAME_HI]
@@ -32,7 +32,7 @@ class CovidInfo:
                 with open(self.time_stamp_path,"r") as fs:
                     buffDict = json.load(fs)
                     storeDateStamp = buffDict[TIME_STAMP_KEY]
-                    diffSceound = round(datetime.timestamp(datetime.fromtimestamp(storeDateStamp) + timedelta(minutes=1)))
+                    diffSceound = round(datetime.timestamp(datetime.fromtimestamp(storeDateStamp) + timedelta(hours=5)))
                     if int(nowDateStamp) > int(diffSceound):
                         with open(self.time_stamp_path,"w") as fss:
                             fss.write(json.dumps({TIME_STAMP_KEY:nowDateStamp}))
