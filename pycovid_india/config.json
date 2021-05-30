@@ -1,0 +1,4 @@
+{
+    "VACCINE_TIMELINE_URL" : "https://www.mygov.in/sites/default/files/covid/vaccine/covid_vaccine_timeline.json",
+    "CASES_TIMELINE_STATE" : "https://www.mygov.in/sites/default/files/covid/covid_state_counts_ver1.json"
+}
