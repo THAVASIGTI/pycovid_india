@@ -7,14 +7,16 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name="pycovid_india",
-    version="0.0.2",
+    version="0.0.3",
     author="T.THAVASI GTI",
     license="MIT",
     author_email="ganeshanthavasigti1032000@gmail.com",
     description="Indian COVID-19 Vaccine and Cases Status Information",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/THAVASIGTI/india_covid.git",
+    Source="https://github.com/THAVASIGTI/pycovid_india.git",
+    download_url = "https://github.com/THAVASIGTI/pycovid_india/archive/refs/heads/master.zip",
+    Tracker="https://github.com/THAVASIGTI/pycovid_india/issues",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[
