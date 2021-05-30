@@ -12,7 +12,7 @@ class CovidInfo:
         self.state_code_file_path = os.path.join(self.location,STATE_CODE_NAME)
         self.get_state_id = self.read_json(self.state_code_file_path)
         self.config_buff = self.read_json(self.config_file_path)
-        self.state_id_count = len(self.state_id)
+        self.state_id_count = len(self.get_state_id)
         self.ignore_ids = [AS_ON,UPDATED_ON,STATE_NAME_HI]
         self.ignore_vacc_ids = [VACCION_UPDATE_ON,VACCINE_LAST_UPDATE]
         self.MASTER_VACCINE_DICT = None
