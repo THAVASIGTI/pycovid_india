@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name="pycovid_india",
-    version="0.0.7",
+    version="0.0.8",
     author="T.THAVASI GTI",
     license="MIT",
     author_email="ganeshanthavasigti1032000@gmail.com",
