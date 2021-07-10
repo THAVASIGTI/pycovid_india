@@ -1,4 +1,5 @@
 {
     "VACCINE_TIMELINE_URL" : "https://www.mygov.in/sites/default/files/covid/vaccine/covid_vaccine_timeline.json",
-    "CASES_TIMELINE_STATE" : "https://www.mygov.in/sites/default/files/covid/covid_state_counts_ver1.json"
+    "CASES_TIMELINE_STATE" : "https://www.mygov.in/sites/default/files/covid/covid_state_counts_ver1.json",
+    "CASES_ACROSS_INDIA" : "https://disease.sh/v3/covid-19/countries/india?strict=true"
 }
