@@ -88,7 +88,26 @@ output:
 
 ```
 
-## get state covid cases infomation and covid acivity 
+## get covid cases information CASES ACROSS INDIA
+``` python
+>>> inCovid.get_covid_info_india()
+```
+output: 
+```json
+
+{   
+    "cases_across":"India",
+    "Total Confirmed cases": 30795716,
+    "Active": 455005,
+    "Cured/Discharged/Migrated": 29933538,
+    "Critical": 8944,
+    "Death": 407173,
+    "Tests": 429041970
+  }
+
+```
+
+## get state covid cases information and covid acivity 
 
 input id is state code `16` 
 

@@ -112,8 +112,7 @@ class CovidInfo:
     # covid info of  total cases,total Active across india
     def get_covid_info_india(self):
         status = self.fetch(self.config_buff[CASES_ACROSS_INDIA])
-        data = {
-            status["country"]: {
+        data = {"cases_across":status["country"],
                 "Total Confirmed cases": status["cases"],
                 "Active": status["active"],
                 "Cured/Discharged/Migrated": status["recovered"],
@@ -121,7 +120,6 @@ class CovidInfo:
                 "Death": status["deaths"],
                 "Tests": status["tests"]
             }
-        }
         return data
 
     def origin(self, act, code=str):
